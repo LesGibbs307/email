@@ -1,16 +1,59 @@
 <html>
 <head>
+<style>
+body {
+	margin: 0;
+}
+.email-wrapper {
+	max-width: 640px;
+	width: 100%;
+	border: 1px solid #000;
+}
+.header {
+	width: 100%;
+    background-repeat: no-repeat;
+}
+.header p {
+    color: #00aa50;
+    padding-top: 40px;
+}
+.header span {
+    color: #000;
+    font-size: 1.25em;
+}
+.hero-cont img {
+	width: 100%;
+    max-width: 330px;
+}
+.hero {
+    background: url(../email/images/hero.jpg);
+    background-size: 100%;
+    min-height: 362px;
+    background-repeat: no-repeat;
+}
+</style>
 </head>
 <body>
-<div class="email-bkgd">
-  <div class="pre-header">
-    A long time ago you signed up to learn about a music app...
-  </div>
-  <div class="email-wrapper" style="background: red;">
-    <h1>Redesigned music app from Travis will not happen.
-        
-    </h1>
-  </div>
+<div class="email-wrapper">
+	<table class="header">
+		<tbody>
+			<tr>
+				<td>
+					<img src="../email/images/children-logo.jpg" style="max-width: 158px;width: 100%;">
+				</td>
+				<td style="text-align: right;display: inline;">
+					<p>donate now<br> <span>Summer 2018</span></p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="hr">
+	 <hr>
+	</div>
+	<div class="hero-cont">
+		<img src="../email/images/small-wonder.jpg" />
+		<div class="hero"></div>
+	</div>
 </div>
 </body>
 </html>
