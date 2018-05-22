@@ -1,8 +1,5 @@
 <html>
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE-edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
 	margin: 0;
@@ -119,9 +116,10 @@ a {
 	color: #fff;
 	text-decoration: underline;	
 }
-@media only screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
     .email-wrapper {
-		max-width: 100%;
+		max-width: 375px;
+		margin: 0;
 	}
 	.hero {
 		min-height: 222px;
@@ -139,7 +137,10 @@ a {
 		font-size: .75em;
 	}
 }
-@media only screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
+    .email-wrapper {
+		max-width: 336px;
+	}
 	.hero {
 		min-height: 202px;
 	}
@@ -173,7 +174,10 @@ a {
 		font-size: 1em;
 	}
 }
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
+    .email-wrapper {
+		max-width: 321px;
+	}
 	.hero {
 		min-height: 192px;
 	}
@@ -193,7 +197,10 @@ a {
 		font-size: .425em;
 	}	
 }
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
+    .email-wrapper {
+		max-width: 281px;
+	}
 	.hero {
 		min-height: 162px;
 	}
@@ -223,7 +230,7 @@ a {
 	}
 	.footer .initial {
 		font-size: .9em;
-	}
+	}	
 }
 </style>
 </head>
