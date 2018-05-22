@@ -8,6 +8,11 @@ body {
 	//max-width: 640px;
 	width: 100%;
 	border: 1px solid #000;
+	overflow: hidden;
+    max-width: 395px;
+	margin: 0 auto;
+	padding: 0 10px;
+	font-family: sans-serif;
 }
 .header {
 	width: 100%;
@@ -24,24 +29,27 @@ body {
 .hero-cont img {
 	width: 100%;
     max-width: 330px;
+	padding-bottom: 20px;
 }
 .hero {
     background: url(../email/images/hero.jpg);
+	background: url(https://cdn.rmiatl.net/img/email/images/hero.jpg);
     background-size: 100%;
-    min-height: 362px;
+    min-height: 232px;
     background-repeat: no-repeat;
 }
 .hero-cont p {
     font-size: .9em;
     text-align: center;
-    font-size: .6em;
+    font-size: .55em;
 }
 .content {
 	text-align: center;
 }
 .content p {
-    font-size: .6em;
+    font-size: .55em;
     margin: 0;
+	padding-bottom: 5px;
 }
 .content h3 {
     margin-bottom: 0;
@@ -61,22 +69,168 @@ body {
 }
 .agenda h5 {
 	color: #ac238d;
-    font-size: 1.1em;
+    font-size: .9em;
+	margin: 5px;
 }
 .footer {
 	background: url(../email/images/footer-bkgd.png);
+	background: url(https://cdn.rmiatl.net/img/images/footer-bkgd.png);
+	margin-top: 5px;
+    padding-bottom: 15px;	
+	background-repeat: no-repeat;
+    background-size: 100%;
 }
-@media screen and (device-width : 414px) {
-    /* Insert styles here */
+.footer img {
+    padding-right: 5px;
+    padding-top: 15px;
 }
-@media screen and (device-width : 375px) {
-    /* Insert styles here */
+.location img {
+	width: 100%;
+	max-width: 400px;
 }
-@media screen and (device-width : 360px) {
-    /* Insert styles here */
+.location {
+	margin-top: 20px;
 }
-@media screen and (device-width : 320px) {
-    /* Insert styles here */
+.footer h3 {
+	margin-top: 0;
+	font-size: .9em;
+    color: #fff;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.footer p {
+	font-size: .5em;
+}
+a {
+	text-decoration: none;
+	color: #00a950;
+}
+.first-a {
+	color: #f58220;
+	text-decoration: underline;	
+}
+.footer .bold {
+	color: #ade1f6;
+}
+.footer .initial {
+	color: #fff;
+	text-decoration: underline;	
+}
+@media screen and (max-width: 414px) {
+    .email-wrapper {
+		max-width: 375px;
+		margin: 0;
+	}
+	.hero {
+		min-height: 222px;
+	}
+	.hero-cont img {
+		max-width: 250px;
+	}
+	.location img {
+		max-width: 380px;
+	}
+	.footer img {
+		width: 7%;
+	}
+	.footer h3 {
+		font-size: .75em;
+	}
+}
+@media screen and (max-width: 375px) {
+    .email-wrapper {
+		max-width: 336px;
+	}
+	.hero {
+		min-height: 202px;
+	}
+	.hero-cont p {
+		font-size: .5em;
+	}
+	.content p {
+		font-size: .5em;
+	}
+	.content a {
+		font-size: 1.25em;
+	}
+	.footer p {
+		font-size: .45em;
+	}
+	.agenda h5 {
+		font-size: .8em;
+	}
+	.footer img {
+		padding-top: 10px;
+		width: 7%;
+	}
+	.footer h3 {
+		font-size: .7em;
+		margin-bottom: 5px;
+	}
+	.content h4 {
+		font-size: .6em;
+	}
+	.footer .initial {
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 360px) {
+    .email-wrapper {
+		max-width: 321px;
+	}
+	.hero {
+		min-height: 192px;
+	}
+	.hero-cont p {
+		font-size: .45em;
+	}	
+	.hero-cont img {
+		max-width: 230px;
+	}
+	.agenda h5 {
+		font-size: .8em;
+	}
+	.content p {
+		font-size: .475em;
+	}	
+	.footer p {
+		font-size: .425em;
+	}	
+}
+@media screen and (max-width: 320px) {
+    .email-wrapper {
+		max-width: 281px;
+	}
+	.hero {
+		min-height: 162px;
+	}
+	.hero-cont img {
+		max-width: 210px;
+	}
+	.hero-cont p {
+		font-size: .4em;
+	}
+	.agenda h5 {
+		font-size: .8em;
+	}
+	.content p, .footer p {
+		font-size: .4em;
+	}
+	.content h4 {
+		font-size: .65em;
+	}
+	.agenda h5 {
+		font-size: .7em;
+	}
+	.header p {
+		font-size: .75em;
+	}	
+	.footer .bold {
+		font-size: 1.1em;
+	}
+	.footer .initial {
+		font-size: .9em;
+	}	
 }
 </style>
 </head>
@@ -86,11 +240,11 @@ body {
 		<tbody>
 			<tr>
 				<td>
-					<img src="../email/images/children-logo.jpg" style="max-width: 158px;width: 100%;">
+					<a href="https://www.choa.org/donors-and-volunteers" target="_blank"><img src="https://cdn.rmiatl.net/img/images/children-logo.jpg" style="max-width: 158px;width: 100%;" /></a>
 					<!--<img src="https://github.com/LesGibbs307/email/blob/master/images/children-logo.jpg" style="max-width: 158px;width: 100%;">-->
 				</td>
 				<td style="text-align: right;display: inline;">
-					<p>donate now<br> <span>Summer 2018</span></p>
+					<p><a href="https://give.choa.org/site/Donation2;jsessionid=00000000.app226a?df_id=1480&mfc_pref=T&1480.donation=form1&NONCE_TOKEN=27711C3D0F21C010C9F491CC2E2E7A55" target="_blank">donate now</a><br> <span>Summer 2018</span></p>
 				</td>
 			</tr>
 		</tbody>
@@ -99,7 +253,7 @@ body {
 	 <hr>
 	</div>
 	<div class="hero-cont">
-		<img src="../email/images/small-wonder.jpg" />
+		<img src="https://cdn.rmiatl.net/img/images/small-wonder.jpg" />
 		<div class="hero"></div>
 		<p>
 		For many families, summer camp is a rite of passage. It’s a time for kids to develop their<br>
@@ -111,10 +265,10 @@ kids can focus less on their medical condition and more on broadening their hori
 a sense of community, learning new skills and doing things they never thought possible.<br>
 		</p>
 		<p>
-			<a>Watch this video to find out why you should consider sending a kid to camp.</a>
+			<a class="first-a" href="https://www.youtube.com/watch?v=gppCtvBxyps" target="_blank">Watch this video to find out why you should consider sending a kid to camp.</a>
 		</p>
 		<p>
-			<a>Give Today</a>
+			<a href="https://www.choa.org/camps" target="_blank">Give Today</a>
 		</p>
 		<div class="hr">
 			<hr>
@@ -122,7 +276,7 @@ a sense of community, learning new skills and doing things they never thought po
 	</div>
 	<div class="content">
 		<div>
-			<img src="../email/images/calender.jpg" />
+			<img src="https://cdn.rmiatl.net/img/images/calender.jpg" />
 		</div>
 		<div class="agenda">
 			<h3 class="first">July 26-27</h3>
@@ -132,7 +286,7 @@ a sense of community, learning new skills and doing things they never thought po
 fundraise for the Aflac Cancer and Blood Disorders Center of Children’s Healthcare of Atlanta.
 			</p>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/donors-and-volunteers/foundation-events/careathon" target="_blank">Learn More</a>
 			</p>			
 			<h3 class="second">Aug. 9</h3>
 			<h4>Jeff Francoeur Home Run Derby</h4>
@@ -140,7 +294,7 @@ fundraise for the Aflac Cancer and Blood Disorders Center of Children’s Health
 Aflac Cancer Center. Francoeur, along with other former Atlanta Braves players,<br>
 will hang out and even serve up a few pitches. </p>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/donors-and-volunteers/foundation-events/jeff-francoeur-home-run-derby" target="_blank">Learn More</a>
 			</p>
 			<h3 class="third">Aug. 25-Dec. 1</h3>
 			<h4>Chick-fil-A Peach Bowl Touchdowns for Children’s (T4C)</h4>
@@ -150,7 +304,7 @@ Pledge as little as $1 for every touchdown your college football team scores thi
 Every donation will be matched by the Chick-fil-A Peach Bowl.
 			</p>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/t4c" target="_blank">Learn More</a>
 			</p>
 			<h3 class="first">Sept. 15</h3>
 			<h4>Arnie’s March</h4>
@@ -159,7 +313,7 @@ Every donation will be matched by the Chick-fil-A Peach Bowl.
 creating or joining a fundraising team, making a donation and registering to march.
 			</p>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/donors-and-volunteers/foundation-events/arnies-march-atlanta" target="_blank">Learn More</a>
 			</p>
 			<h3 class="second">Sept. 28</h3>
 			<h4>Marathon by Midnight at SunTrust Park</h4>
@@ -168,7 +322,7 @@ SunTrust Park baseball field to reach 26.2 miles. This exclusive event is imited
 top 50 fundraisers. The final lap takes runners around the bases and across home plate.<br>
 All proceeds benefit Children’s.</p>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/donors-and-volunteers/foundation-events/marathon-by-midnight" target="_blank">Learn More</a>
 			</p>
 			<h3 class="third">Oct. 20</h3>
 			<h4>Tower of Talent</h4>
@@ -176,36 +330,36 @@ All proceeds benefit Children’s.</p>
 Atlanta’s most talented kids ages 6 to 21. A benefit by children for Children’s,<br>
 the concert theme is ‘kids helping kids.’</p>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/donors-and-volunteers/foundation-events/tower-of-talent" target="_blank">Learn More</a>
 			</p>
 			<h5>Check out the full calendar of community events<br> 
 that benefit the kids at Children’s.</h5>
 			<p>
-				<a>Learn More</a>
+				<a href="https://www.choa.org/donors-and-volunteers/foundation-events" target="_blank">Learn More</a>
 			</p>
 		</div>
 		<div class="location">
-			<img src="../email/images/location.jpg">
+			<img src="https://cdn.rmiatl.net/img/images/location.jpg">
 		</div>
 		<div class="footer">
 			<table>
 				<tr>
-					<img src="../email/images/fb.png" />
+					<a href="https://www.facebook.com/ChildrensHealthcareofAtlanta" target="_blank"><img src="https://cdn.rmiatl.net/img/images/fb.png" /></a>
 				</tr>
 				<tr>
-					<img src="../email/images/tw.png" />
+					<a href="https://twitter.com/childrensatl" target="_blank"><img src="https://cdn.rmiatl.net/img/images/tw.png" /></a>
 				</tr>
 				<tr>
-					<img src="../email/images/ig.jpg" />
+					<a href="https://www.instagram.com/childrensatl/" target="_blank"><img src="https://cdn.rmiatl.net/img/images/ig.jpg" /></a>
 				</tr>
 				<tr>
-					<img src="../email/images/in.jpg" />
+					<a href="https://www.linkedin.com/company/9553/?trk=tyah" target="_blank"><img src="https://cdn.rmiatl.net/img/images/in.jpg" /></a>
 				</tr>
 				<tr>
-					<img src="../email/images/note.jpg" />				
+					<a href="https://www.choa.org/blog" target="_blank"><img src="https://cdn.rmiatl.net/img/images/note.jpg" /></a>				
 				</tr>
 				<tr>
-					<img src="../email/images/you.jpg" />								
+					<a href="https://www.youtube.com/user/childrenshospitals" target="_blank"><img src="https://cdn.rmiatl.net/img/images/you.jpg" /></a>								
 				</tr>
 			</table>
 				<h3>Egleston <span style="color: #71bf44;">•</span> Hughes Spalding <span style="color: #71bf44;">•</span> Scottish Rite</h3>
@@ -214,9 +368,9 @@ that benefit the kids at Children’s.</h5>
 			three hospitals, seven urgent care centers, the Marcus Autism Center and<br>
 			28 neighborhood locations throughout the state.
 				</p>
-				<h4><a>choa.org</a></h4>
-				<p><a>Email Preferences</a></p>
-				<p><a>Privacy Policy</a></p>
+				<h4><a class="bold" href="https://www.choa.org" target="_blank">choa.org</a></h4>
+				<p><a class="initial" href="http://giving.choa.org/page.aspx?pid=291" target="_blank">Email Preferences</a></p>
+				<p><a class="initial" href="https://giving.choa.org/page.aspx?pid=294&srctid=1&erid=14377594&trid=6ab6d185-ea0a-4a69-8944-388a27e53a76" target="_blank">Privacy Policy</a></p>
 		</div>
 	</div>
 </div>
