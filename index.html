@@ -3,6 +3,242 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE-edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	margin: 0;
+}
+.email-wrapper {
+	//max-width: 640px;
+	width: 100%;
+	border: 1px solid #000;
+	overflow: hidden;
+    max-width: 395px;
+	margin: 0 auto;
+	padding: 0 10px;
+	font-family: sans-serif;
+}
+.header {
+	width: 100%;
+    background-repeat: no-repeat;
+}
+.header p {
+    color: #00aa50;
+    padding-top: 40px;
+}
+.header span {
+    color: #000;
+    font-size: 1.25em;
+}
+.hero-cont img {
+	width: 100%;
+    max-width: 330px;
+	padding-bottom: 20px;
+}
+.hero {
+    background: url(../email/images/hero.jpg);
+	background: url(https://cdn.rmiatl.net/img/images/hero.jpg);
+    background-size: 100%;
+    min-height: 232px;
+    background-repeat: no-repeat;
+}
+.hero-cont p {
+    font-size: .9em;
+    text-align: center;
+    font-size: .55em;
+}
+.content {
+	text-align: center;
+}
+.content p {
+    font-size: .55em;
+    margin: 0;
+	padding-bottom: 5px;
+}
+.content h3 {
+    margin-bottom: 0;
+}
+.content h4 {
+    margin: 0;
+    font-size: .8em;
+}
+.first {
+    color: #b33f98;
+}
+.second {
+    color: #5bc3ee;
+}
+.third {
+    color: #f79b53;
+}
+.agenda h5 {
+	color: #ac238d;
+    font-size: .9em;
+	margin: 5px;
+	padding-top: 25px;
+}
+.footer {
+	background: url(../email/images/footer-bkgd.png);
+	background: url(https://cdn.rmiatl.net/img/images/footer-bkgd.png);
+	margin-top: 5px;
+    padding-bottom: 15px;	
+	background-repeat: no-repeat;
+    background-size: 100%;
+}
+.footer img {
+    padding-right: 5px;
+    padding-top: 15px;
+}
+.location img {
+	width: 100%;
+	max-width: 400px;
+}
+.location {
+	margin-top: 20px;
+}
+.footer h3 {
+	margin-top: 0;
+	font-size: .9em;
+    color: #fff;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.footer p {
+	font-size: .5em;
+}
+a {
+	text-decoration: none;
+	color: #00a950;
+}
+.first-a {
+	color: #f58220;
+}
+.footer .bold {
+	color: #ade1f6;
+}
+.footer .initial {
+	color: #fff;
+	text-decoration: underline;	
+}
+@media screen and (max-width: 414px) {
+    .email-wrapper {
+		max-width: 394px;
+		margin: 0 auto;
+	}
+	.hero {
+		min-height: 222px;
+	}
+	.hero-cont img {
+		max-width: 250px;
+	}
+	.location img {
+		max-width: 380px;
+	}
+	.footer img {
+		width: 7%;
+	}
+	.footer h3 {
+		font-size: .75em;
+	}
+	.hero-cont p, .content p {
+		font-size: .7em;
+	}
+	.footer p {
+		font-size: .65em;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.header p {
+		font-size: .8em;
+		padding-top: 0;
+	}
+	.footer {
+		background: url(https://cdn.rmiatl.net/img/images/m-footer-bkgd.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+	}
+}
+@media screen and (max-width: 375px) {
+    .email-wrapper {
+		max-width: 355px;
+	}
+	.hero {
+		min-height: 202px;
+	}
+	.content a {
+		font-size: 1.25em;
+	}
+	.footer p {
+		font-size: .425em;
+	}
+	.agenda h5 {
+		font-size: .8em;
+	}
+	.footer img {
+		padding-top: 10px;
+		width: 7%;
+	}
+	.footer h3 {
+		font-size: .7em;
+		margin-bottom: 5px;
+	}
+	.content h4 {
+		font-size: .75em;
+	}
+	.footer .initial {
+		font-size: 1em;
+	}
+}
+@media screen and (max-width: 360px) {
+    .email-wrapper {
+		max-width: 340px;
+		margin: 0 auto;
+	}
+	.hero {
+		min-height: 192px;
+	}
+	.hero-cont img {
+		max-width: 230px;
+	}
+	.agenda h5 {
+		font-size: .8em;
+	}
+	.footer p {
+		font-size: .425em;
+	}	
+}
+@media screen and (max-width: 320px) {
+    .email-wrapper {
+		max-width: 300px;
+	}
+	.hero {
+		min-height: 162px;
+	}
+	.hero-cont img {
+		max-width: 210px;
+	}
+	.agenda h5 {
+		font-size: .8em;
+	}
+	.footer p {
+		font-size: .4em;
+	}
+	.agenda h5 {
+		font-size: .7em;
+	}
+	.header p {
+		font-size: .75em;
+	}	
+	.footer .bold {
+		font-size: 1.1em;
+	}
+	.footer .initial {
+		font-size: .9em;
+	}	
+	.hero-cont p, .content p {
+		font-size: .6em;
+	}	
+}
+</style>
     </head>
     <body>
         <table width="100%" style="max-width: 600px; border: 2px solid #000;">
